@@ -110,6 +110,6 @@ class TodoViewTestCase(TestCase):
 
     def test_detail_get_fail(self):
         client = Client()
-        response = cilent.get('/1')
+        response = client.get('/1')
 
         self.assertEquel(response.status_code, 404)
